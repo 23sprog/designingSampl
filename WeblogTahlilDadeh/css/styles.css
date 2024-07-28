@@ -1,0 +1,163 @@
+:root{
+    --blue: #1d71b9;
+    --text-color: #727272;
+    --blue-more-deatail: #149BD9;
+    --white:#fff;
+    --blue-bg: #B9E3FF;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Yekan;
+    color: var(--text-color);
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+.articles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--blue-bg);
+    padding: 6rem 0;
+
+}
+
+.articles__title{
+    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article__title-left-line,
+.article__title-right-line{
+    width: 35%;
+    height: .24rem;
+    position: relative;
+}
+
+.article__title-left-line::after,
+.article__title-right-line::after{
+    content: " ";
+    position: absolute;
+    width: 1.68rem;
+    height: 1.68rem;
+    top: 50%;
+
+    background: var(--blue);
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+}
+
+.article__title-left-line::after{
+    right: -2.1rem;
+}
+
+.article__title-right-line::after{
+    left: -2.1rem;
+}
+
+.article__title-left-line{
+    background: linear-gradient(to right,transparent 20%, var(--blue));
+    margin-right: 3.5rem;
+}
+
+.articles__title-text{
+
+    font-weight: 500;
+
+    font-size: 2.8rem;
+}
+
+.article__title-right-line{
+    background: linear-gradient(to left,transparent 20%, var(--blue));
+    margin-left: 3.5rem;
+}
+
+.articles__items{
+
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.article{
+    width: 30rem;
+    height: 28.4rem;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 1.8rem;
+    position: relative;
+    box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, .2);
+    margin-top: 10rem;
+}
+
+.article__image{
+    width: 100%;
+    border-radius: 1.8rem;
+    margin-top: -9rem;
+    height: 16.2rem;
+}
+
+.artile__title{
+
+    margin: 1rem 0;
+    color: var(--text-color);
+    font-size: 1.8rem;
+
+    font-weight: 600;
+}
+
+.article__description{
+    line-height: 2;
+    font-size: 1.4rem;
+}
+
+.article__more-info{
+
+    position: absolute;
+
+    left: 3rem;
+
+    bottom: 2rem;
+}
+
+.article__link--arrow{
+
+    color: var(--blue-more-deatail);
+}
+
+.article__link--arrow:hover .article__more-info-icon{
+    transform: translateX(-.7rem);
+}
+
+.article__more-info-text{
+
+    position: relative;
+
+    font-size: 1.4rem;
+
+    margin-left: .7rem;
+
+    font-weight: 700;
+}
+
+.article__more-info-icon{
+    transition: all 350ms ease-in-out;
+}
+

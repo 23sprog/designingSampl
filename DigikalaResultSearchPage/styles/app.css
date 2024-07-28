@@ -1,0 +1,262 @@
+:root {
+    --red: #D32F2F;
+    --gold: #F9BC00;
+    --text-color: #3F4064;
+    --white: #fff;
+    --grey: #c0c2c5;
+    --light-grey: #F0F0F1;
+    --red-active-item: #F0495C;
+    --black: #000;
+    --grey-sort-item: #81858b;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Yekan;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+################
+     Toman
+    Digikala
+################
+*/
+
+
+@font-face {
+    font-family: digikala;
+    src: url(../font/Digikala.eot);
+    src: url(../font/Digikala.eot?#iefix) format("eot"), url(../font/Digikala.woff2) format("woff2"), url(../font/Digikala.woff) format("woff"), url(../font/Digikala.ttf) format("truetype")
+}
+
+.price-label {
+    margin-bottom: 4px;
+    margin-right: 2px;
+}
+
+.price-label:before {
+    content: "\F06C\00FE0E";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.5;
+    width: 16px;
+    height: 16px;
+    font-family: digikala;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+    box-sizing: inherit;
+}
+
+
+/*
+##############
+    Styles
+##############
+*/
+
+.main {
+    padding: 1.5rem;
+}
+
+/*
+##############
+    Product
+    Section
+##############
+*/
+
+
+.productsItems {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.productItem {
+    width: 33.7rem;
+    height: 48rem;
+    /*border: .2rem solid #000;*/
+
+}
+
+.productItem--left-border {
+    border-left: solid 1px var(--light-grey);
+}
+
+.productItem--bottom-border {
+    border-bottom: solid 1px var(--light-grey);
+}
+
+.productItem--top-border {
+    border-top: solid 1px var(--light-grey);
+}
+
+.productItem--right-border {
+    border-right: solid 1px var(--light-grey);
+}
+
+
+.productItem:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+}
+
+.productItem__image {
+    width: 95%;
+
+}
+
+.productItem__link {
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.productItem__title {
+    font-size: 1.2rem;
+    height: 5.6rem;
+    color: var(--text-color);
+    padding-top: 1rem;
+}
+
+.productItemRank {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productItemRank__star {
+
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.productItemRank__star-icon {
+    color: var(--gold);
+}
+
+.productItemRank__star-number {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.productItemRank__count {
+    color: var(--red);
+    font-size: 1.1rem;
+
+}
+
+.productItem__price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: var(--text-color);
+}
+
+.productItem__price-number {
+    display: flex;
+    align-items: center;
+}
+
+.productItem__price-discount {
+
+    background: var(--red);
+    color: var(--white);
+    border-radius: 2rem;
+    padding: .3rem;
+    font-size: 1.1rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productItem__price-discount--invisible{
+    visibility: hidden;
+}
+
+.productItem__last-price{
+    color: var(--grey);
+    align-self: end;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.productItem__last-price::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    top: 50%;
+    left: 0;
+    background: var(--grey);
+    transform: translateY(.1rem);
+}
+
+/*
+##############
+    Sort
+    Product
+    Section
+##############
+*/
+
+.sortItems {
+    display: flex;
+    gap: 1.2rem;
+    padding: 2.2rem 1rem;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.sortItems__item {
+    font-size: 1.25rem;
+}
+
+.sortItems__item-link {
+    color: var(--grey-sort-item);
+
+}
+
+.sortItems__item--icon {
+    color: var(--black);
+}
+
+.sortItems__item--title {
+    color: var(--black);
+}
+
+.sortItems__item-link--active {
+    color: var(--red-active-item);
+}

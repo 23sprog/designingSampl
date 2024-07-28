@@ -1,0 +1,54 @@
+
+body{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+/* This is red paragraph*/
+p{
+    color: red;
+}
+
+
+.container > span{
+    background-color: magenta;
+}
+.container a{
+    background-color: red;
+}
+.container p{
+    background-color: whitesmoke;
+    color: blue;
+}
+
+.container ~ h6{
+    background-color: yellow;
+}
+
+input[type="text"]{
+    background-color: lawngreen;
+}
+
+
+input[type$="word"] {
+    background: peru;
+}
+
+[type]{
+    border: 3px solid hotpink;
+}
+
+
+p[class*="Text"]{
+    opacity: 60%;
+    font-weight: 600;
+}
+.my-photo{
+
+    background-image: url("images/011b40b90d8aed72ef547bba1698689598f332fd_1609242506.jpg");
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
