@@ -1,0 +1,57 @@
+
+@media screen and (min-width: 1200px){
+}
+
+
+@media screen and (max-width: 1200px) {
+}
+
+
+@media screen and (max-width: 992px){
+}
+
+@media screen and (max-width: 768px){
+
+    .lesson-thumpnail__img-computer {
+
+        display: none;
+    }
+
+    .lesson-thumpnail__img-mobile {
+        display: block;
+    }
+
+
+    .lesson-thumpnail__title {
+        left: 14%;
+        top: 11%;
+        font-size: 6.2vw;
+        font-weight: bold;
+    }
+
+    .lesson-thumpnail__description {
+        left: 2%;
+        font-size: 4.5vw;
+        top: 36%;
+        gap: 1rem;
+        align-items: start;
+        width: 30%;
+    }
+    .course-info__mobile{
+        display: block;
+    }
+    .course-info__pc{
+        display: none;
+    }
+    .scroll-progress__item-link {
+        font-size: .9rem;
+    }
+    .scroll-progress{
+        padding: 2.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+}
+
+

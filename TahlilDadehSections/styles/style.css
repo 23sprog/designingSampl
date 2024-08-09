@@ -19,7 +19,7 @@ body {
     color: var(--text-color);
 }
 
-*, ::after, ::before {
+*, *::after, *::before {
     box-sizing: inherit;
 }
 

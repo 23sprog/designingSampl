@@ -1,0 +1,546 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    direction: rtl;
+    font-family: Yekan;
+    background: rgb(250, 249, 255);
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-center-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 14rem;
+    padding-top: 1rem;
+}
+
+.navbar__items {
+    display: flex;
+    margin-left: 7rem;
+    gap: 1rem;
+}
+
+.navbar__items-link {
+}
+
+.navbar__items-link::before {
+    content: " ";
+    width: 3.6rem;
+    height: 3.6rem;
+    background-image: url("https://www.tahlildadeh.com/Content/images/img/HeaderIcons.svg");
+    background-size: 1897%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px;
+}
+
+.navbar__items-link:nth-child(1)::before {
+    background-position: 100.2% center;
+}
+
+.navbar__items-link:nth-child(2)::before {
+    background-position: 90.2% center;
+}
+
+.navbar__items-link:nth-child(3)::before {
+    background-position: 59.9% center;
+}
+
+.navbar__items-link:nth-child(4)::before {
+    background-position: 80.3% center;
+}
+
+.navbar__items-link:nth-child(5)::before {
+    background-position: 70% center;
+}
+
+.navbar__items-text {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px;
+    font-weight: 300;
+    color: rgb(29, 113, 185);
+    font-size: 1.4rem;
+}
+
+.navbar__logo {
+    width: 29rem;
+    gap: 1rem;
+}
+
+.navbar__logo-image {
+    width: 38%;
+}
+
+.navbar__logo-title {
+    color: rgb(29, 113, 185);
+    font-weight: 800;
+}
+
+.navbar__logo-description {
+    color: rgb(29, 113, 185);
+}
+
+.navbar__search-box {
+    background: rgb(241, 241, 241);
+    height: 5rem;
+    position: relative;
+    width: 15%;
+    border-radius: 0.6rem;
+}
+
+.navbar__search-box-text {
+    font-family: Yekan;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 84%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.navbar__search-box-text::placeholder {
+    font-size: 1.6rem;
+    color: rgb(152, 152, 152);
+}
+
+.navbar__search-box-btn {
+    width: 3rem;
+    position: absolute;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    right: 0.3rem;
+}
+
+.navbar__search-box-btn-img {
+    width: 100%;
+}
+
+.navbar__user-btns {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar__user-btns-auth {
+    font-family: Yekan;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.8rem 1.8rem 0.8rem 3rem;
+    color: rgb(25, 131, 199);
+    border: 0.2rem solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar__user-btns-auth::before {
+    content: " ";
+    --wid: 1rem;
+    position: absolute;
+    width: var(--wid);
+    height: var(--wid);
+    border-left: 0.3rem solid;
+    border-bottom: 0.3rem solid;
+    left: 1.5rem;
+    transform: rotate(-45deg) translateY(-50%);
+    top: 46%;
+}
+
+.navbar__user-btns-auth-icon {
+    font-size: 2.5rem;
+}
+
+.navbar__user-btns-auth-text {
+    font-size: 1.7rem;
+}
+
+.navbar__user-btns-cart {
+    background-repeat: no-repeat;
+    background-image: url("https://www.tahlildadeh.com/Content/images/img/cartIcon.svg");
+    width: 3.6rem;
+    height: 3.6rem;
+    display: block;
+    background-size: 80%;
+    background-position: 49% center;
+    position: relative;
+}
+
+.navbar__user-btns-cart::before {
+    content: attr(data-count);
+    width: 1.8rem;
+    height: 1.8rem;
+    background: rgb(236, 28, 36);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -0.5rem;
+    top: -1rem;
+}
+
+.lessons-panel {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.8rem 0px;
+    margin: 1rem 2.5rem;
+    border-top: 0.2rem solid rgb(241, 241, 241);
+}
+
+.lessons-panel-item {
+    position: relative;
+}
+
+.lessons-panel-item--parent {
+    padding-left: 2rem;
+}
+
+.lessons-panel-item--parent::before {
+    content: "";
+    --wid: 1rem;
+    width: var(--wid);
+    height: var(--wid);
+    position: absolute;
+    top: 0px;
+    left: 0.2rem;
+    border-top: 0.34rem solid rgb(56, 56, 56);
+    border-left: 0.34rem solid rgb(56, 56, 56);
+    transform: rotate(225deg);
+}
+
+.lessons-panel-item--new {
+}
+
+.lessons-panel-item--new::after {
+    content: "Ø¬Ø¯ÛŒØ¯";
+    background: rgba(236, 28, 36, 0.9);
+    position: absolute;
+    top: -2.5rem;
+    right: -2rem;
+    padding: 0.4rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    transform: rotate(39deg);
+}
+
+.lessons-panel__link {
+    color: rgb(56, 56, 56);
+}
+
+.scroll-progress {
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+    background: rgb(214, 230, 246);
+    padding: 3rem;
+    border-radius: 1rem;
+    align-items: center;
+    border: 0.1rem solid rgb(160, 201, 232);
+}
+
+.scroll-progress__item {
+    width: 56rem;
+    text-align: center;
+}
+
+@keyframes warn-opacity {
+    0% {
+        color: rgb(253, 23, 24);
+    }
+
+    100% {
+        color: rgba(253, 23, 24, 0.4);
+    }
+}
+
+.scroll-progress__item-link {
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+}
+
+.scroll-progress__item-link--alarm {
+    color: rgb(253, 23, 24);
+    animation-name: warn-opacity;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.scroll-progress__line {
+    width: 87%;
+    border: 0.1rem solid rgb(190, 202, 215);
+}
+
+.lesson-thumpnail {
+    width: 92%;
+    margin: 4rem auto;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.lesson-thumpnail__img-computer {
+    width: 100%;
+
+}
+
+.lesson-thumpnail__img-mobile {
+    display: none;
+    width: 100%;
+}
+
+.lesson-thumpnail__title {
+    position: absolute;
+    left: 41%;
+    top: 67%;
+    font-size: 2.2vw;
+}
+
+.lesson-thumpnail__description {
+    position: absolute;
+    left: 32%;
+    font-size: 1.5vw;
+    top: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: end;
+}
+
+.lesson-thumpnail__description-2 {
+    font-weight: bold;
+}
+
+
+.course-info{
+
+    margin: 2rem auto;
+
+    width: 90%;
+
+    margin-bottom: 5rem;
+}
+
+.course-info__head{
+
+    padding: 2.5rem;
+
+    width: 100%;
+
+    display: flex;
+
+    background: #EAB2DB;
+
+    border-radius: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    gap: .5rem;
+
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, .2);
+}
+
+.course-info__head-item{
+
+    width: 11.11%;
+
+    text-align: center;
+
+    color: #693D68;
+
+    font-weight: bold;
+}
+
+.course-info__body{
+
+    padding: 2.5rem;
+
+    border-radius: 1.5rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4rem;
+
+    box-shadow: -1px 3px 13px 3px rgba(0, 0, 0, 0.2);
+}
+
+.course-info__list{
+
+    display: flex;
+
+    width: 100%;
+
+    gap: 0.5rem;
+
+    align-items: center;
+}
+
+.course-info__list-item{
+
+    width: 11.11%;
+
+    text-align: center;
+
+    color: #606C74;
+}
+
+.course-info__list-item--btn{
+    width: 12%;
+}
+
+.course-info__link{
+
+    color: #2F2FFF;
+}
+
+.course-info__btn{
+
+    font-size: 1.65rem;
+
+    background: #308FCC;
+
+    border: none;
+
+    font-family: 'Yekan';
+
+    padding: .6rem 1rem;
+
+    color: #fff;
+
+    border-radius: 1rem;
+}
+
+
+.course-info__mobile{
+    display: none;
+}
+
+.course-info__mobile-list{
+
+    width: 85%;
+
+    background: #F0CAE7;
+
+    margin: 0 auto;
+
+    border-radius: 1.5rem;
+
+    padding: 1.5rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.course-info__mobile-title{
+
+    color: #5D6470;
+
+    margin-bottom: .8rem;
+}
+
+.course-info__mobile-item{
+
+    border: .1rem solid #fff;
+
+    color: #42515A;
+
+    padding: 1rem;
+
+    background: #F8E5F3;
+
+    width: 80%;
+
+    border-radius: 1rem;
+
+    text-align: center;
+
+    margin-bottom: 1.8rem;
+}
+
+.course-info__mobile-btn{
+    width: 80%;
+    margin: 2rem 0;
+    font-size: 1.65rem;
+
+    background: #308FCC;
+
+    border: none;
+
+    font-family: 'Yekan';
+
+    padding: .6rem 1rem;
+
+    color: #fff;
+
+    border-radius: 1rem;
+}
+
+.main{
+
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.extra-course{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .2);
+
+    border-radius: 1.5rem;
+
+    padding: 2rem;
+}
+
+.extra-course__title{
+
+    color: #308fcc;
+
+    font-weight: bold;
+
+    margin-bottom: 2.5rem;
+}
+
+.extra-course__item{
+
+    margin: .5rem .2rem;
+}
+
+.extra-course__link{
+    color: #727272;
+}
+
+.extra-course__link:hover{
+    text-decoration: underline;
+}
